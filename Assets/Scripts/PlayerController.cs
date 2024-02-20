@@ -22,7 +22,8 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
-        playerRb.AddForce(horizontalInput * speed * Vector3.right, ForceMode.Impulse);
+        if (isGrounded) playerRb.AddForce(horizontalInput * speed * Vector3.right, ForceMode.Impulse);
+        else playerRb.AddForce(0.3f * horizontalInput * speed * Vector3.right, ForceMode.Impulse);
 
         if (transform.position.x < -xBound)
         {
