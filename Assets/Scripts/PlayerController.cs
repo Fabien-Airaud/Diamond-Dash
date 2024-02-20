@@ -5,6 +5,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody playerRb;
 
     private float speed = 10.0f;
+    private float jumpForce = 10.0f;
     private float xBound = 7.0f;
 
 
@@ -30,6 +31,11 @@ public class PlayerController : MonoBehaviour
         {
             transform.position = new Vector3(xBound, transform.position.y, transform.position.z);
             playerRb.velocity = Vector3.zero;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            playerRb.AddForce(jumpForce * playerRb.mass * Vector3.up, ForceMode.Impulse);
         }
     }
 }
