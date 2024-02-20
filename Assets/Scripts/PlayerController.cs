@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour
         // Horizontal movement
         float horizontalInput = Input.GetAxis("Horizontal");
         if (isGrounded) playerRb.AddForce(horizontalInput * speed * Vector3.right, ForceMode.Impulse);
-        else playerRb.AddForce(0.3f * horizontalInput * speed * Vector3.right, ForceMode.Impulse);
+        else playerRb.AddForce(0.2f * horizontalInput * speed * Vector3.right, ForceMode.Impulse);
 
         // Jumping
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
