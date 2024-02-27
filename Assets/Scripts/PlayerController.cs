@@ -63,5 +63,10 @@ public class PlayerController : MonoBehaviour
         {
             isGrounded = true;
         }
+
+        if (collision.gameObject.CompareTag("Obstacle"))
+        {
+            Debug.Log("Player has collided with " + collision.gameObject.name);
+        }
     }
 }
