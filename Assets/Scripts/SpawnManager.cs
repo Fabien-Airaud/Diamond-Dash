@@ -14,6 +14,8 @@ public class SpawnManager : MonoBehaviour
     void Start()
     {
         SpawnObstacle();
+        SpawnHeart();
+        SpawnDiamond();
     }
 
     // Update is called once per frame
@@ -29,5 +31,19 @@ public class SpawnManager : MonoBehaviour
         float xSpawn = Random.Range(-xBound, xBound);
 
         Instantiate(obstaclePrefabs[obstacleIndex], new Vector3(xSpawn, 0, zSpawn), obstaclePrefabs[obstacleIndex].transform.rotation);
+    }
+
+    private void SpawnHeart()
+    {
+        float xSpawn = Random.Range(-xBound, xBound);
+
+        Instantiate(heartPrefab, new Vector3(xSpawn, 0, zSpawn), heartPrefab.transform.rotation);
+    }
+
+    private void SpawnDiamond()
+    {
+        float xSpawn = Random.Range(-xBound, xBound);
+
+        Instantiate(diamondPrefab, new Vector3(xSpawn, 0, zSpawn), diamondPrefab.transform.rotation);
     }
 }
