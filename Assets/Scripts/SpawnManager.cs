@@ -29,21 +29,24 @@ public class SpawnManager : MonoBehaviour
     {
         int obstacleIndex = Random.Range(0, obstaclePrefabs.Length);
         float xSpawn = Random.Range(-xBound, xBound);
+        Vector3 spawnPos = new(xSpawn, obstaclePrefabs[obstacleIndex].transform.position.y, zSpawn);
 
-        Instantiate(obstaclePrefabs[obstacleIndex], new Vector3(xSpawn, 0, zSpawn), obstaclePrefabs[obstacleIndex].transform.rotation);
+        Instantiate(obstaclePrefabs[obstacleIndex], spawnPos, obstaclePrefabs[obstacleIndex].transform.rotation);
     }
 
     private void SpawnHeart()
     {
         float xSpawn = Random.Range(-xBound, xBound);
+        Vector3 spawnPos = new(xSpawn, heartPrefab.transform.position.y, zSpawn);
 
-        Instantiate(heartPrefab, new Vector3(xSpawn, 0, zSpawn), heartPrefab.transform.rotation);
+        Instantiate(heartPrefab, spawnPos, heartPrefab.transform.rotation);
     }
 
     private void SpawnDiamond()
     {
         float xSpawn = Random.Range(-xBound, xBound);
+        Vector3 spawnPos = new(xSpawn, diamondPrefab.transform.position.y, zSpawn);
 
-        Instantiate(diamondPrefab, new Vector3(xSpawn, 0, zSpawn), diamondPrefab.transform.rotation);
+        Instantiate(diamondPrefab, spawnPos, diamondPrefab.transform.rotation);
     }
 }
