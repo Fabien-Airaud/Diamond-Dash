@@ -6,16 +6,28 @@ public class SpawnManager : MonoBehaviour
     public GameObject heartPrefab;
     public GameObject diamondPrefab;
 
+    private readonly float xBound = 5.0f;
+    private readonly float zSpawn = 15.0f;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        SpawnObstacle();
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+
+    private void SpawnObstacle()
+    {
+        int obstacleIndex = Random.Range(0, obstaclePrefabs.Length);
+        float xSpawn = Random.Range(-xBound, xBound);
+
+        Instantiate(obstaclePrefabs[obstacleIndex], new Vector3(xSpawn, 0, zSpawn), obstaclePrefabs[obstacleIndex].transform.rotation);
     }
 }
