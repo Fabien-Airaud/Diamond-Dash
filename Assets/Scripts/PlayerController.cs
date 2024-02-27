@@ -69,4 +69,19 @@ public class PlayerController : MonoBehaviour
             Debug.Log("Player has collided with " + collision.gameObject.name);
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Heart"))
+        {
+            Debug.Log("Player has collided with " + other.gameObject.name);
+            Destroy(other.gameObject);
+        }
+
+        if (other.gameObject.CompareTag("Diamond"))
+        {
+            Debug.Log("Player has collided with " + other.gameObject.name);
+            Destroy(other.gameObject);
+        }
+    }
 }
