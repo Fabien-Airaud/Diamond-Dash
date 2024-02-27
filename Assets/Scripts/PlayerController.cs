@@ -48,12 +48,12 @@ public class PlayerController : MonoBehaviour
         if (transform.position.x < -xBound)
         {
             transform.position = new Vector3(-xBound, transform.position.y, transform.position.z);
-            playerRb.velocity = Vector3.zero;
+            playerRb.velocity = new Vector2(0, playerRb.velocity.y);
         }
         if (transform.position.x > xBound)
         {
             transform.position = new Vector3(xBound, transform.position.y, transform.position.z);
-            playerRb.velocity = Vector3.zero;
+            playerRb.velocity = new Vector2(0, playerRb.velocity.y);
         }
     }
 
