@@ -35,7 +35,7 @@ public class PlayerController : MonoBehaviour
         else playerRb.AddForce(0.2f * horizontalInput * speed * Vector3.right, ForceMode.Impulse);
 
         // Jumping
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        if ((Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) && isGrounded)
         {
             playerRb.AddForce(jumpForce * playerRb.mass * Vector3.up, ForceMode.Impulse);
             isGrounded = false;
