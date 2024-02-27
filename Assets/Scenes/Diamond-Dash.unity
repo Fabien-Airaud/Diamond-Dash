@@ -547,6 +547,7 @@ GameObject:
   - component: {fileID: 1092416355}
   - component: {fileID: 1092416354}
   - component: {fileID: 1092416353}
+  - component: {fileID: 1092416358}
   - component: {fileID: 1092416357}
   m_Layer: 0
   m_Name: Obstacle 1
@@ -653,6 +654,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c41ca2b7d07b6f04c8e03ae98441330b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &1092416358
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092416352}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1522328116
 GameObject:
   m_ObjectHideFlags: 0
@@ -783,6 +811,7 @@ GameObject:
   - component: {fileID: 1784564473}
   - component: {fileID: 1784564472}
   - component: {fileID: 1784564471}
+  - component: {fileID: 1784564476}
   - component: {fileID: 1784564475}
   m_Layer: 0
   m_Name: Obstacle 2
@@ -889,6 +918,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c41ca2b7d07b6f04c8e03ae98441330b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &1784564476
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784564470}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1924015856
 GameObject:
   m_ObjectHideFlags: 0
@@ -1047,6 +1103,7 @@ GameObject:
   - component: {fileID: 1939188664}
   - component: {fileID: 1939188663}
   - component: {fileID: 1939188662}
+  - component: {fileID: 1939188667}
   - component: {fileID: 1939188666}
   m_Layer: 0
   m_Name: Obstacle 3
@@ -1153,6 +1210,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c41ca2b7d07b6f04c8e03ae98441330b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &1939188667
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939188661}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
