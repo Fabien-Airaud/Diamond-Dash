@@ -31,8 +31,8 @@ public class PlayerController : MonoBehaviour
     {
         // Horizontal movement
         float horizontalInput = Input.GetAxis("Horizontal");
-        if (isGrounded) playerRb.AddForce(horizontalInput * speed * Vector3.right, ForceMode.Impulse);
-        else playerRb.AddForce(0.2f * horizontalInput * speed * Vector3.right, ForceMode.Impulse);
+        playerRb.AddForce(horizontalInput * speed * Vector3.right, ForceMode.Impulse);
+        if (!isGrounded) playerRb.velocity = new Vector2(playerRb.velocity.x * 0.95f, playerRb.velocity.y);
 
         // Jumping
         if ((Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) && isGrounded)
