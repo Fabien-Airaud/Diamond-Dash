@@ -273,6 +273,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd8155ec37df494b80300dc9cee5776, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  obstaclePrefabs:
+  - {fileID: 8565773820723290160, guid: af211ac4b0097714282276df14a2ed74, type: 3}
+  - {fileID: 6004696856592746719, guid: 06c2342915e45904388d2f401adcfad1, type: 3}
+  - {fileID: 216559119042459294, guid: 31efc2b9937d3174e9516a68397d7393, type: 3}
+  heartPrefab: {fileID: 4904246991573707811, guid: 7a79afca0692c69478571b0923b6a4b0, type: 3}
+  diamondPrefab: {fileID: 4680901623594949227, guid: 6ec9cc2df65fb104a8a03f12fdfd1290, type: 3}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
