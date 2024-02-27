@@ -9,7 +9,7 @@ public class MoveDown : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(speed * Time.deltaTime * Vector3.back);
+        transform.Translate(speed * Time.deltaTime * Vector3.back, Space.World);
 
         if (transform.position.z < zBound) Destroy(gameObject);
     }
