@@ -10,7 +10,7 @@ public class SpawnManager : MonoBehaviour
     private readonly float zSpawn = 15.0f;
 
     private readonly float startDelayObstacles = 1.0f;
-    private readonly float obstacleSpawnTime = 3.0f;
+    private readonly float obstacleSpawnTime = 2.0f;
     private readonly float startDelayDiamonds = 2.0f;
     private readonly float diamondMinSpawnTime = 5.0f;
     private readonly float diamondMaxSpawnTime = 10.0f;
