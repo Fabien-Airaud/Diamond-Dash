@@ -9,13 +9,20 @@ public class SpawnManager : MonoBehaviour
     private readonly float xBound = 5.0f;
     private readonly float zSpawn = 15.0f;
 
+    private readonly float startDelayObstacles = 1.0f;
+    private readonly float obstacleSpawnTime = 3.0f;
+    private readonly float startDelayDiamonds = 2.0f;
+    private readonly float diamondMinSpawnTime = 5.0f;
+    private readonly float diamondMaxSpawnTime = 10.0f;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        SpawnObstacle();
-        SpawnHeart();
-        SpawnDiamond();
+        float spawnTimeDiamond = Random.Range(diamondMinSpawnTime, diamondMaxSpawnTime);
+        InvokeRepeating(nameof(SpawnObstacle), startDelayObstacles, obstacleSpawnTime);
+        InvokeRepeating(nameof(SpawnDiamond), startDelayDiamonds, spawnTimeDiamond);
+        //SpawnHeart();
     }
 
     // Update is called once per frame
